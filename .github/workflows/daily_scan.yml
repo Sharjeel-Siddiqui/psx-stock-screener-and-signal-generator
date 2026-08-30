@@ -86,10 +86,13 @@ jobs:
             echo "No state changes to commit."
           else
             git commit -m "Update alert state"
+            
+            # Fetch latest remote changes
+            git fetch origin main
+            
+            # Rebase local changes on top of remote
+            git rebase origin/main
+            
+            # Push with force-with-lease (safe force push after rebase)
+            git push --force-with-lease origin HEAD:main
           fi
-
-          # Get latest remote changes before pushing.
-          git pull --rebase origin main
-
-          # Push updated state.
-          git push origin HEAD:main
