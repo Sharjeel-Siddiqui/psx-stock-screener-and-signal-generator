@@ -4,77 +4,191 @@ import logging
 from datetime import datetime
 from zoneinfo import ZoneInfo
 
-from config import SYMBOLS, TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
+from config import SYMBOLS, NTFY_TOPIC
 from data_provider import get_daily_history
 from strategy import add_indicators
 from state import load_state, save_state, signal_key
-from telegram import send_telegram
+from ntfy import send_ntfy
+
 
 TZ = ZoneInfo("Asia/Karachi")
+
 
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s | %(levelname)s | %(message)s",
 )
 
-def format_message(symbol: str, row, action: str) -> str:
-    emoji = "🟢" if action == "BUY" else "🔴"
-    reason = (
-        "Golden Cross + 2 Daily Candle Confirmation"
-        if action == "BUY"
-        else "Death Cross + 2 Daily Candle Confirmation"
-    )
+
+# =====================================================
+# FORMAT ALERT MESSAGE
+# =====================================================
+
+def format_message(
+    symbol: str,
+    row,
+    action: str,
+) -> str:
+
+    if action == "BUY":
+
+        return (
+            "🟢 BUY SIGNAL\n\n"
+            f"Symbol: {symbol}\n"
+            f"Price: {float(row['close']):.2f}\n\n"
+            f"EMA 7: {float(row['ema7']):.2f}\n"
+            f"EMA 21: {float(row['ema21']):.2f}\n\n"
+            "Reason:\n"
+            "Golden Cross + 2 Daily Candle Confirmation\n\n"
+            "Action: BUY"
+        )
+
     return (
-        f"{emoji} {action} SIGNAL\n\n"
+        "🔴 SELL SIGNAL\n\n"
         f"Symbol: {symbol}\n"
-        f"Price: {float(row['close']):.4f}\n"
-        f"EMA 7: {float(row['ema7']):.4f}\n"
-        f"EMA 21: {float(row['ema21']):.4f}\n\n"
-        f"Reason: {reason}\n"
-        f"Signal date: {row['date']}\n"
-        f"Action: {'BUY' if action == 'BUY' else 'SELL ALL'}"
+        f"Price: {float(row['close']):.2f}\n\n"
+        f"EMA 7: {float(row['ema7']):.2f}\n"
+        f"EMA 21: {float(row['ema21']):.2f}\n\n"
+        "Reason:\n"
+        "Death Cross + 2 Daily Candle Confirmation\n\n"
+        "Action: SELL ALL"
     )
 
 
-def scan_symbol(symbol: str, state: dict) -> bool:
-    logging.info("Scanning %s", symbol)
-    df = get_daily_history(symbol, years=3)
+# =====================================================
+# SCAN ONE STOCK
+# =====================================================
 
-    # Only evaluate a candle that is already present as an EOD bar.
-    # The GitHub workflow runs after the PSX session. If the provider
-    # ever returns a current/incomplete date, skip it.
-    today_pk = datetime.now(TZ).date()
-    df = df[df["date"] <= today_pk].copy()
+def scan_symbol(
+    symbol: str,
+    state: dict,
+) -> bool:
+
+    logging.info(
+        "Scanning %s",
+        symbol
+    )
+
+    # -------------------------------------------------
+    # Download 3 years of daily data
+    # -------------------------------------------------
+
+    df = get_daily_history(
+        symbol,
+        years=3,
+    )
+
+    if df.empty:
+        raise ValueError(
+            f"{symbol}: empty dataset"
+        )
+
+    # -------------------------------------------------
+    # Make absolutely sure data is chronological
+    # -------------------------------------------------
+
+    df = (
+        df
+        .sort_values("date")
+        .drop_duplicates(
+            subset=["date"],
+            keep="last",
+        )
+        .reset_index(drop=True)
+    )
+
+    # -------------------------------------------------
+    # Minimum data requirement
+    # -------------------------------------------------
 
     if len(df) < 30:
-        raise ValueError(f"{symbol}: insufficient history")
+        raise ValueError(
+            f"{symbol}: insufficient history"
+        )
+
+    # -------------------------------------------------
+    # Calculate indicators
+    # -------------------------------------------------
 
     x = add_indicators(df)
+
+    # -------------------------------------------------
+    # Latest CLOSED daily candle
+    # -------------------------------------------------
+
     row = x.iloc[-1]
 
-    # We only act on today's latest EOD row. If the provider's latest
-    # row is not today's date, it may be a holiday/weekend or delayed.
-    # In that case the latest row is still a closed candle, and can be
-    # processed exactly once.
     signal_date = row["date"]
 
+    # -------------------------------------------------
+    # Signal detection
+    # -------------------------------------------------
+
     action = None
+
     if bool(row["buy_signal"]):
         action = "BUY"
+
     elif bool(row["sell_signal"]):
         action = "SELL"
 
-    if not action:
-        logging.info("%s: no signal on %s", symbol, signal_date)
+    # -------------------------------------------------
+    # No signal
+    # -------------------------------------------------
+
+    if action is None:
+
+        logging.info(
+            "%s: no signal on %s",
+            symbol,
+            signal_date,
+        )
+
         return False
 
-    key = signal_key(symbol, action, signal_date)
+    # -------------------------------------------------
+    # Prevent duplicate alerts
+    # -------------------------------------------------
+
+    key = signal_key(
+        symbol,
+        action,
+        signal_date,
+    )
+
     if key in state["signals"]:
-        logging.info("%s: already sent %s on %s", symbol, action, signal_date)
+
+        logging.info(
+            "%s: already sent %s on %s",
+            symbol,
+            action,
+            signal_date,
+        )
+
         return False
 
-    message = format_message(symbol, row, action)
-    send_telegram(TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, message)
+    # -------------------------------------------------
+    # Create notification
+    # -------------------------------------------------
+
+    message = format_message(
+        symbol,
+        row,
+        action,
+    )
+
+    # -------------------------------------------------
+    # Send notification
+    # -------------------------------------------------
+
+    send_ntfy(
+        NTFY_TOPIC,
+        message,
+    )
+
+    # -------------------------------------------------
+    # Save signal state
+    # -------------------------------------------------
 
     state["signals"][key] = {
         "symbol": symbol,
@@ -85,25 +199,74 @@ def scan_symbol(symbol: str, state: dict) -> bool:
         "ema21": float(row["ema21"]),
         "sent_at": datetime.now(TZ).isoformat(),
     }
-    logging.info("SENT %s %s @ %s", action, symbol, row["close"])
+
+    logging.info(
+        "SENT %s %s @ %s",
+        action,
+        symbol,
+        row["close"],
+    )
+
     return True
 
 
+# =====================================================
+# MAIN SCANNER
+# =====================================================
+
 def main() -> None:
+
+    if not NTFY_TOPIC:
+
+        raise RuntimeError(
+            "NTFY_TOPIC is not configured"
+        )
+
     state = load_state()
+
     sent = 0
 
+    # -------------------------------------------------
+    # Scan all stocks
+    # -------------------------------------------------
+
     for symbol in SYMBOLS:
+
         try:
-            if scan_symbol(symbol, state):
+
+            if scan_symbol(
+                symbol,
+                state,
+            ):
+
                 sent += 1
+
         except Exception as exc:
-            # Fail safely: never create a signal from bad/missing data.
-            logging.exception("%s: DATA ERROR / scan failed: %s", symbol, exc)
+
+            # IMPORTANT:
+            # Never generate a signal from bad data.
+
+            logging.exception(
+                "%s: DATA ERROR / scan failed: %s",
+                symbol,
+                exc,
+            )
+
+    # -------------------------------------------------
+    # Persist state
+    # -------------------------------------------------
 
     save_state(state)
-    logging.info("Scan complete. Alerts sent: %d", sent)
 
+    logging.info(
+        "Scan complete. Alerts sent: %d",
+        sent,
+    )
+
+
+# =====================================================
+# ENTRY POINT
+# =====================================================
 
 if __name__ == "__main__":
     main()
