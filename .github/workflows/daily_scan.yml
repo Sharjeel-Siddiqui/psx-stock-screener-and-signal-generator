@@ -101,11 +101,11 @@ jobs:
 
           git commit -m "Update alert state"
 
-          # Make sure remote is still up to date.
+          # Sync with the latest remote main.
           git fetch origin main
 
-          # Rebase our state commit on latest main.
+          # Rebase our state update on top of latest main.
           git rebase origin/main
 
-          # Push updated state.
-          git push origin HEAD:main
+          # Push safely.
+          git push --force-with-lease origin HEAD:main
