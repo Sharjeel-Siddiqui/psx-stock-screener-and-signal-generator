@@ -2,11 +2,22 @@ name: PSX Daily Signal Scan
 
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "Run mode: main (scan for signals) or reminder (re-send last alerts)"
+        required: false
+        default: "main"
+        type: choice
+        options:
+          - main
+          - reminder
 
   schedule:
-    # 16:30 Pakistan Standard Time
-    # 11:30 UTC
+    # MAIN scan — 16:30 Pakistan Standard Time (11:30 UTC)
     - cron: "30 11 * * 1-5"
+    # REMINDER — next-morning, pre-market
+    # 09:00 Pakistan Standard Time (04:00 UTC)
+    - cron: "0 4 * * 1-5"
 
 
 concurrency:
@@ -77,9 +88,26 @@ jobs:
       - name: Run PSX scanner
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          SCHEDULE: ${{ github.event.schedule }}
+          DISPATCH_MODE: ${{ github.event.inputs.mode }}
 
         run: |
-          python scanner.py
+          # Decide run mode:
+          #  - manual dispatch: honour the chosen input
+          #  - the 23:30 UTC cron: reminder run
+          #  - anything else (11:30 UTC cron): main scan
+          MODE="${DISPATCH_MODE}"
+
+          if [ -z "$MODE" ]; then
+            if [ "$SCHEDULE" = "0 4 * * 1-5" ]; then
+              MODE="reminder"
+            else
+              MODE="main"
+            fi
+          fi
+
+          echo "Resolved run mode: $MODE"
+          RUN_MODE="$MODE" python scanner.py
 
 
       # ================================================
