@@ -6,24 +6,55 @@ import os
 # =====================================================
 # PSX STOCKS
 # =====================================================
+#
+# Full KMI-30 (KSE-Meezan 30) Shariah-compliant index as
+# re-composed effective 25 May 2026 — PSX Notice N-610,
+# accounts as of 31 Dec 2025 — plus a few extra names that
+# were on the original watchlist but are NOT KMI-30
+# members (BFBIO, DCR, FABL, GGL, NETSOL).
+#
+# NOTE: KMI-30 is re-composed twice a year (~May & Nov),
+# so review this list after each recomposition.
 
 SYMBOLS = [
-    "BFBIO",
-    "DCR",
+    # ----- KMI-30 constituents (30) -----
+    "AIRLINK",
+    "ATRL",
+    "CPHL",
+    "DGKC",
     "EFERT",
     "ENGROH",
-    "FABL",
+    "FCCL",
     "FFC",
+    "FFL",
     "GAL",
-    "GGL",
+    "GHNI",
     "HCAR",
     "HUBC",
+    "LUCK",
+    "MARI",
     "MEBL",
     "MLCF",
-    "NETSOL",
+    "NML",
+    "NRL",
     "OGDC",
+    "PAEL",
+    "PPL",
+    "PRL",
     "PSO",
+    "SAZEW",
+    "SEARL",
+    "SNGP",
+    "SSGC",
     "SYS",
+    "TREET",
+
+    # ----- Extra (non-KMI-30) watchlist -----
+    "BFBIO",
+    "DCR",
+    "FABL",
+    "GGL",
+    "NETSOL",
 ]
 
 
