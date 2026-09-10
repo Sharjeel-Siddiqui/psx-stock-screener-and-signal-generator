@@ -13,8 +13,9 @@ from config import (
 )
 from data_provider import get_daily_history
 from strategy import add_indicators
-from state import load_state, save_state, signal_key
+from state import load_state, save_state, save_portfolio, signal_key
 from ntfy import send_ntfy
+from paper import simulate
 
 
 TZ = ZoneInfo("Asia/Karachi")
@@ -254,10 +255,12 @@ def emit_signal(
 def scan_symbol(
     symbol: str,
     state: dict,
+    portfolio: dict | None = None,
 ) -> int:
     """
     Scan a single symbol and return how many NEW alerts
-    were sent.
+    were sent. If a `portfolio` dict is given, also store
+    this symbol's simulated 100k paper scenario in it.
     """
 
     logging.info(
@@ -309,6 +312,13 @@ def scan_symbol(
     x = add_indicators(df)
 
     # -------------------------------------------------
+    # Simulated 100k paper scenario (for the app)
+    # -------------------------------------------------
+
+    if portfolio is not None:
+        portfolio[symbol] = simulate(symbol, x)
+
+    # -------------------------------------------------
     # Re-check the last N closed candles, oldest first,
     # so a previously-missed signal is still caught and
     # alerts arrive in chronological order.
@@ -349,7 +359,7 @@ def scan_symbol(
 # MAIN SCAN (mode = main)
 # =====================================================
 
-def run_scan(state: dict) -> int:
+def run_scan(state: dict, portfolio: dict) -> int:
 
     sent = 0
 
@@ -360,6 +370,7 @@ def run_scan(state: dict) -> int:
             sent += scan_symbol(
                 symbol,
                 state,
+                portfolio,
             )
 
         except Exception as exc:
@@ -447,10 +458,14 @@ def main() -> None:
 
     logging.info("Run mode: %s", mode)
 
+    portfolio: dict = {}
+
     if mode == "reminder":
         count = run_reminder(state)
     else:
-        count = run_scan(state)
+        count = run_scan(state, portfolio)
+        # Only the main scan recomputes the paper scenarios.
+        save_portfolio(portfolio)
 
     # -------------------------------------------------
     # Persist state
