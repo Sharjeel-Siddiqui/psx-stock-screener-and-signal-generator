@@ -27,6 +27,16 @@ def signal_key(symbol: str, signal: str, date_value) -> str:
     return f"{symbol}:{signal}:{date_value}"
 
 
+def load_portfolio() -> dict:
+    """Load the last-saved paper-portfolio scenarios (empty if none)."""
+    if not PORTFOLIO_FILE.exists():
+        return {}
+    try:
+        return json.loads(PORTFOLIO_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+
+
 def save_portfolio(portfolio: dict) -> None:
     """
     Persist the simulated 100k paper-portfolio scenarios

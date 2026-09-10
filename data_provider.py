@@ -1,12 +1,39 @@
 from __future__ import annotations
 
 import logging
+import random
+import time
 
 import pandas as pd
 import psxdata
 
 
 logger = logging.getLogger(__name__)
+
+
+# How many times to retry a single symbol's fetch, and the base
+# backoff (seconds). PSX (dps.psx.com.pk) is occasionally unreachable
+# from GitHub's runners; a few spaced-out retries ride out brief blips.
+_FETCH_ATTEMPTS = 4
+_FETCH_BACKOFF = 4.0
+
+
+def _fetch_stocks(symbol: str, start, end):
+    """Call psxdata.stocks with retries + exponential backoff."""
+    last_err = None
+    for attempt in range(1, _FETCH_ATTEMPTS + 1):
+        try:
+            return psxdata.stocks(symbol, start=str(start), end=str(end))
+        except Exception as exc:  # noqa: BLE001 - PSX/network flakiness
+            last_err = exc
+            if attempt < _FETCH_ATTEMPTS:
+                wait = _FETCH_BACKOFF * (2 ** (attempt - 1)) + random.uniform(0, 2)
+                logger.warning(
+                    "%s: fetch attempt %d/%d failed (%s); retrying in %.1fs",
+                    symbol, attempt, _FETCH_ATTEMPTS, exc, wait,
+                )
+                time.sleep(wait)
+    raise last_err
 
 
 def get_daily_history(symbol: str, years: int = 3) -> pd.DataFrame:
@@ -37,11 +64,7 @@ def get_daily_history(symbol: str, years: int = 3) -> pd.DataFrame:
     # FETCH DATA
     # -------------------------------------------------
 
-    df = psxdata.stocks(
-        symbol,
-        start=str(start),
-        end=str(end),
-    )
+    df = _fetch_stocks(symbol, start, end)
 
     if df is None or len(df) == 0:
         raise ValueError(f"No data returned for {symbol}")

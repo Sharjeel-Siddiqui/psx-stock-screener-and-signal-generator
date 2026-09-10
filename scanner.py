@@ -13,7 +13,7 @@ from config import (
 )
 from data_provider import get_daily_history
 from strategy import add_indicators
-from state import load_state, save_state, save_portfolio, signal_key
+from state import load_state, save_state, load_portfolio, save_portfolio, signal_key
 from ntfy import send_ntfy
 from paper import simulate
 
@@ -464,8 +464,19 @@ def main() -> None:
         count = run_reminder(state)
     else:
         count = run_scan(state, portfolio)
-        # Only the main scan recomputes the paper scenarios.
-        save_portfolio(portfolio)
+        # Only the main scan recomputes the paper scenarios. IMPORTANT:
+        # never wipe good data when PSX was unreachable — if we got some
+        # symbols, merge them over the last-saved file; if we got nothing,
+        # leave the existing portfolio.json untouched.
+        if portfolio:
+            merged = load_portfolio()
+            merged.update(portfolio)
+            save_portfolio(merged)
+        else:
+            logging.warning(
+                "No portfolio data this run (PSX unreachable?); "
+                "keeping the previous portfolio.json."
+            )
 
     # -------------------------------------------------
     # Persist state
