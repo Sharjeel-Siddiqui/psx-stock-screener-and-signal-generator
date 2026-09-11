@@ -267,22 +267,22 @@
   "ATRL": {
     "capital_start": 100000.0,
     "cash": 610.89,
-    "equity": 203694.13,
+    "equity": 206480.29,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-13",
       "buy_price": 926.51,
       "cost": 174183.88,
-      "last_price": 1080.23,
-      "market_value": 203083.24,
+      "last_price": 1095.05,
+      "market_value": 205869.4,
       "symbol": "ATRL",
       "units": 188,
-      "unrealized_pct": 16.59,
-      "unrealized_pnl": 28899.36
+      "unrealized_pct": 18.19,
+      "unrealized_pnl": 31685.52
     },
     "realized_pnl": 74794.77,
     "symbol": "ATRL",
-    "total_return_pct": 103.69,
+    "total_return_pct": 106.48,
     "trades": [
       {
         "action": "BUY",
@@ -989,22 +989,22 @@
   "DCR": {
     "capital_start": 100000.0,
     "cash": 29.56,
-    "equity": 258562.96,
+    "equity": 258177.76,
     "in_position": true,
     "position": {
       "buy_date": "2026-08-07",
       "buy_price": 38.6,
       "cost": 247812.0,
-      "last_price": 40.27,
-      "market_value": 258533.4,
+      "last_price": 40.21,
+      "market_value": 258148.2,
       "symbol": "DCR",
       "units": 6420,
-      "unrealized_pct": 4.33,
-      "unrealized_pnl": 10721.4
+      "unrealized_pct": 4.17,
+      "unrealized_pnl": 10336.2
     },
     "realized_pnl": 147841.56,
     "symbol": "DCR",
-    "total_return_pct": 158.56,
+    "total_return_pct": 158.18,
     "trades": [
       {
         "action": "BUY",
@@ -1410,22 +1410,22 @@
   "EFERT": {
     "capital_start": 100000.0,
     "cash": 146.04,
-    "equity": 134436.84,
+    "equity": 138254.74,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-07",
       "buy_price": 189.52,
       "cost": 138349.6,
-      "last_price": 183.96,
-      "market_value": 134290.8,
+      "last_price": 189.19,
+      "market_value": 138108.7,
       "symbol": "EFERT",
       "units": 730,
-      "unrealized_pct": -2.93,
-      "unrealized_pnl": -4058.8
+      "unrealized_pct": -0.17,
+      "unrealized_pnl": -240.9
     },
     "realized_pnl": 38495.64,
     "symbol": "EFERT",
-    "total_return_pct": 34.44,
+    "total_return_pct": 38.25,
     "trades": [
       {
         "action": "BUY",
@@ -2801,22 +2801,22 @@
   "GAL": {
     "capital_start": 100000.0,
     "cash": 255.2,
-    "equity": 828908.63,
+    "equity": 843836.51,
     "in_position": true,
     "position": {
       "buy_date": "2026-04-16",
       "buy_price": 466.34,
       "cost": 661736.46,
-      "last_price": 583.97,
-      "market_value": 828653.43,
+      "last_price": 594.49,
+      "market_value": 843581.31,
       "symbol": "GAL",
       "units": 1419,
-      "unrealized_pct": 25.22,
-      "unrealized_pnl": 166916.97
+      "unrealized_pct": 27.48,
+      "unrealized_pnl": 181844.85
     },
     "realized_pnl": 561991.66,
     "symbol": "GAL",
-    "total_return_pct": 728.91,
+    "total_return_pct": 743.84,
     "trades": [
       {
         "action": "BUY",
@@ -3203,23 +3203,13 @@
   },
   "GHNI": {
     "capital_start": 100000.0,
-    "cash": 381.53,
-    "equity": 482381.78,
-    "in_position": true,
-    "position": {
-      "buy_date": "2026-04-16",
-      "buy_price": 820.16,
-      "cost": 337085.76,
-      "last_price": 1172.75,
-      "market_value": 482000.25,
-      "symbol": "GHNI",
-      "units": 411,
-      "unrealized_pct": 42.99,
-      "unrealized_pnl": 144914.49
-    },
-    "realized_pnl": 237467.29,
+    "cash": 490494.92,
+    "equity": 490494.92,
+    "in_position": false,
+    "position": null,
+    "realized_pnl": 390494.92,
     "symbol": "GHNI",
-    "total_return_pct": 382.38,
+    "total_return_pct": 390.49,
     "trades": [
       {
         "action": "BUY",
@@ -3389,9 +3379,20 @@
         "date": "2026-04-16",
         "price": 820.16,
         "units": 411
+      },
+      {
+        "action": "SELL",
+        "buy_date": "2026-04-16",
+        "buy_price": 820.16,
+        "date": "2026-09-11",
+        "pnl": 153027.63,
+        "pnl_pct": 45.4,
+        "price": 1192.49,
+        "proceeds": 490113.39,
+        "units": 411
       }
     ],
-    "trades_count": 19
+    "trades_count": 20
   },
   "HCAR": {
     "capital_start": 100000.0,
@@ -4914,22 +4915,22 @@
   "NETSOL": {
     "capital_start": 100000.0,
     "cash": 6.08,
-    "equity": 95566.38,
+    "equity": 95781.57,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-09",
       "buy_price": 124.34,
       "cost": 99098.98,
-      "last_price": 119.9,
-      "market_value": 95560.3,
+      "last_price": 120.17,
+      "market_value": 95775.49,
       "symbol": "NETSOL",
       "units": 797,
-      "unrealized_pct": -3.57,
-      "unrealized_pnl": -3538.68
+      "unrealized_pct": -3.35,
+      "unrealized_pnl": -3323.49
     },
     "realized_pnl": -894.94,
     "symbol": "NETSOL",
-    "total_return_pct": -4.43,
+    "total_return_pct": -4.22,
     "trades": [
       {
         "action": "BUY",
@@ -5461,22 +5462,22 @@
   "NRL": {
     "capital_start": 100000.0,
     "cash": 287.34,
-    "equity": 133621.8,
+    "equity": 143698.38,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-09",
       "buy_price": 391.52,
       "cost": 104535.84,
-      "last_price": 499.38,
-      "market_value": 133334.46,
+      "last_price": 537.12,
+      "market_value": 143411.04,
       "symbol": "NRL",
       "units": 267,
-      "unrealized_pct": 27.55,
-      "unrealized_pnl": 28798.62
+      "unrealized_pct": 37.19,
+      "unrealized_pnl": 38875.2
     },
     "realized_pnl": 4823.18,
     "symbol": "NRL",
-    "total_return_pct": 33.62,
+    "total_return_pct": 43.7,
     "trades": [
       {
         "action": "BUY",
@@ -5689,22 +5690,22 @@
   "OGDC": {
     "capital_start": 100000.0,
     "cash": 145.55,
-    "equity": 169478.67,
+    "equity": 172110.43,
     "in_position": true,
     "position": {
       "buy_date": "2026-08-25",
       "buy_price": 327.43,
       "cost": 175502.48,
-      "last_price": 315.92,
-      "market_value": 169333.12,
+      "last_price": 320.83,
+      "market_value": 171964.88,
       "symbol": "OGDC",
       "units": 536,
-      "unrealized_pct": -3.52,
-      "unrealized_pnl": -6169.36
+      "unrealized_pct": -2.02,
+      "unrealized_pnl": -3537.6
     },
     "realized_pnl": 75648.03,
     "symbol": "OGDC",
-    "total_return_pct": 69.48,
+    "total_return_pct": 72.11,
     "trades": [
       {
         "action": "BUY",
@@ -6483,22 +6484,22 @@
   "PRL": {
     "capital_start": 100000.0,
     "cash": 5.38,
-    "equity": 225961.94,
+    "equity": 239084.34,
     "in_position": true,
     "position": {
       "buy_date": "2026-06-18",
       "buy_price": 36.64,
       "cost": 102298.88,
-      "last_price": 80.93,
-      "market_value": 225956.56,
+      "last_price": 85.63,
+      "market_value": 239078.96,
       "symbol": "PRL",
       "units": 2792,
-      "unrealized_pct": 120.88,
-      "unrealized_pnl": 123657.68
+      "unrealized_pct": 133.71,
+      "unrealized_pnl": 136780.08
     },
     "realized_pnl": 2304.26,
     "symbol": "PRL",
-    "total_return_pct": 125.96,
+    "total_return_pct": 139.08,
     "trades": [
       {
         "action": "BUY",
