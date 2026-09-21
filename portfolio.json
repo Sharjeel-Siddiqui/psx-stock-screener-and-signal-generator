@@ -267,22 +267,22 @@
   "ATRL": {
     "capital_start": 100000.0,
     "cash": 610.89,
-    "equity": 207352.61,
+    "equity": 213174.97,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-13",
       "buy_price": 926.51,
       "cost": 174183.88,
-      "last_price": 1099.69,
-      "market_value": 206741.72,
+      "last_price": 1130.66,
+      "market_value": 212564.08,
       "symbol": "ATRL",
       "units": 188,
-      "unrealized_pct": 18.69,
-      "unrealized_pnl": 32557.84
+      "unrealized_pct": 22.03,
+      "unrealized_pnl": 38380.2
     },
     "realized_pnl": 74794.77,
     "symbol": "ATRL",
-    "total_return_pct": 107.35,
+    "total_return_pct": 113.17,
     "trades": [
       {
         "action": "BUY",
@@ -989,22 +989,22 @@
   "DCR": {
     "capital_start": 100000.0,
     "cash": 5.68,
-    "equity": 253109.74,
+    "equity": 252854.98,
     "in_position": true,
     "position": {
       "buy_date": "2026-08-07",
       "buy_price": 38.6,
       "cost": 245843.4,
-      "last_price": 39.74,
-      "market_value": 253104.06,
+      "last_price": 39.7,
+      "market_value": 252849.3,
       "symbol": "DCR",
       "units": 6369,
-      "unrealized_pct": 2.95,
-      "unrealized_pnl": 7260.66
+      "unrealized_pct": 2.85,
+      "unrealized_pnl": 7005.9
     },
     "realized_pnl": 145849.08,
     "symbol": "DCR",
-    "total_return_pct": 153.11,
+    "total_return_pct": 152.85,
     "trades": [
       {
         "action": "BUY",
@@ -1410,22 +1410,22 @@
   "EFERT": {
     "capital_start": 100000.0,
     "cash": 146.04,
-    "equity": 136677.94,
+    "equity": 138736.54,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-07",
       "buy_price": 189.52,
       "cost": 138349.6,
-      "last_price": 187.03,
-      "market_value": 136531.9,
+      "last_price": 189.85,
+      "market_value": 138590.5,
       "symbol": "EFERT",
       "units": 730,
-      "unrealized_pct": -1.31,
-      "unrealized_pnl": -1817.7
+      "unrealized_pct": 0.17,
+      "unrealized_pnl": 240.9
     },
     "realized_pnl": 38495.64,
     "symbol": "EFERT",
-    "total_return_pct": 36.68,
+    "total_return_pct": 38.74,
     "trades": [
       {
         "action": "BUY",
@@ -4138,304 +4138,286 @@
   },
   "MARI": {
     "capital_start": 100000.0,
-    "cash": 22114.39,
-    "equity": 22114.39,
+    "cash": 15860.58,
+    "equity": 15860.58,
     "in_position": false,
     "position": null,
-    "realized_pnl": -77885.61,
+    "realized_pnl": -84139.42,
     "symbol": "MARI",
-    "total_return_pct": -77.89,
+    "total_return_pct": -84.14,
     "trades": [
       {
         "action": "BUY",
-        "cost": 98637.0,
-        "date": "2023-11-02",
-        "price": 1617.0,
-        "units": 61
-      },
-      {
-        "action": "SELL",
-        "buy_date": "2023-11-02",
-        "buy_price": 1617.0,
-        "date": "2024-02-14",
-        "pnl": 42991.58,
-        "pnl_pct": 43.59,
-        "price": 2321.78,
-        "proceeds": 141628.58,
-        "units": 61
-      },
-      {
-        "action": "BUY",
-        "cost": 142798.9,
+        "cost": 98482.0,
         "date": "2024-03-01",
         "price": 2462.05,
-        "units": 58
+        "units": 40
       },
       {
         "action": "SELL",
         "buy_date": "2024-03-01",
         "buy_price": 2462.05,
         "date": "2024-06-06",
-        "pnl": 10448.7,
+        "pnl": 7206.0,
         "pnl_pct": 7.32,
         "price": 2642.2,
-        "proceeds": 153247.6,
-        "units": 58
+        "proceeds": 105688.0,
+        "units": 40
       },
       {
         "action": "BUY",
-        "cost": 153416.64,
+        "cost": 104969.28,
         "date": "2024-07-05",
         "price": 2691.52,
-        "units": 57
+        "units": 39
       },
       {
         "action": "SELL",
         "buy_date": "2024-07-05",
         "buy_price": 2691.52,
         "date": "2024-07-12",
-        "pnl": -1312.14,
+        "pnl": -897.78,
         "pnl_pct": -0.86,
         "price": 2668.5,
-        "proceeds": 152104.5,
-        "units": 57
+        "proceeds": 104071.5,
+        "units": 39
       },
       {
         "action": "BUY",
-        "cost": 150272.8,
+        "cost": 104537.6,
         "date": "2024-08-12",
         "price": 3266.8,
-        "units": 46
+        "units": 32
       },
       {
         "action": "SELL",
         "buy_date": "2024-08-12",
         "buy_price": 3266.8,
         "date": "2024-09-19",
-        "pnl": -129632.14,
+        "pnl": -90178.88,
         "pnl_pct": -86.26,
         "price": 448.71,
-        "proceeds": 20640.66,
-        "units": 46
+        "proceeds": 14358.72,
+        "units": 32
       },
       {
         "action": "BUY",
-        "cost": 22342.71,
+        "cost": 16040.92,
         "date": "2024-12-06",
         "price": 572.89,
-        "units": 39
+        "units": 28
       },
       {
         "action": "SELL",
         "buy_date": "2024-12-06",
         "buy_price": 572.89,
         "date": "2025-01-23",
-        "pnl": 872.04,
+        "pnl": 626.08,
         "pnl_pct": 3.9,
         "price": 595.25,
-        "proceeds": 23214.75,
-        "units": 39
+        "proceeds": 16667.0,
+        "units": 28
       },
       {
         "action": "BUY",
-        "cost": 23341.45,
+        "cost": 16402.1,
         "date": "2025-03-18",
         "price": 630.85,
-        "units": 37
+        "units": 26
       },
       {
         "action": "SELL",
         "buy_date": "2025-03-18",
         "buy_price": 630.85,
         "date": "2025-04-25",
-        "pnl": -536.5,
+        "pnl": -377.0,
         "pnl_pct": -2.3,
         "price": 616.35,
-        "proceeds": 22804.95,
-        "units": 37
+        "proceeds": 16025.1,
+        "units": 26
       },
       {
         "action": "BUY",
-        "cost": 22431.96,
+        "cost": 16200.86,
         "date": "2025-05-19",
         "price": 623.11,
-        "units": 36
+        "units": 26
       },
       {
         "action": "SELL",
         "buy_date": "2025-05-19",
         "buy_price": 623.11,
         "date": "2025-05-22",
-        "pnl": -157.32,
+        "pnl": -113.62,
         "pnl_pct": -0.7,
         "price": 618.74,
-        "proceeds": 22274.64,
-        "units": 36
+        "proceeds": 16087.24,
+        "units": 26
       },
       {
         "action": "BUY",
-        "cost": 22091.65,
+        "cost": 15779.75,
         "date": "2025-06-13",
         "price": 631.19,
-        "units": 35
+        "units": 25
       },
       {
         "action": "SELL",
         "buy_date": "2025-06-13",
         "buy_price": 631.19,
         "date": "2025-06-24",
-        "pnl": -11.2,
+        "pnl": -8.0,
         "pnl_pct": -0.05,
         "price": 630.87,
-        "proceeds": 22080.45,
-        "units": 35
+        "proceeds": 15771.75,
+        "units": 25
       },
       {
         "action": "BUY",
-        "cost": 22648.15,
+        "cost": 16177.25,
         "date": "2025-07-02",
         "price": 647.09,
-        "units": 35
+        "units": 25
       },
       {
         "action": "SELL",
         "buy_date": "2025-07-02",
         "buy_price": 647.09,
         "date": "2025-07-21",
-        "pnl": -1016.75,
+        "pnl": -726.25,
         "pnl_pct": -4.49,
         "price": 618.04,
-        "proceeds": 21631.4,
-        "units": 35
+        "proceeds": 15451.0,
+        "units": 25
       },
       {
         "action": "BUY",
-        "cost": 21155.64,
+        "cost": 15385.92,
         "date": "2025-08-13",
         "price": 641.08,
-        "units": 33
+        "units": 24
       },
       {
         "action": "SELL",
         "buy_date": "2025-08-13",
         "buy_price": 641.08,
         "date": "2025-08-28",
-        "pnl": -618.09,
+        "pnl": -449.52,
         "pnl_pct": -2.92,
         "price": 622.35,
-        "proceeds": 20537.55,
-        "units": 33
+        "proceeds": 14936.4,
+        "units": 24
       },
       {
         "action": "BUY",
-        "cost": 20854.08,
+        "cost": 14988.87,
         "date": "2025-09-05",
         "price": 651.69,
-        "units": 32
+        "units": 23
       },
       {
         "action": "SELL",
         "buy_date": "2025-09-05",
         "buy_price": 651.69,
         "date": "2025-10-31",
-        "pnl": 1549.44,
+        "pnl": 1113.66,
         "pnl_pct": 7.43,
         "price": 700.11,
-        "proceeds": 22403.52,
-        "units": 32
+        "proceeds": 16102.53,
+        "units": 23
       },
       {
         "action": "BUY",
-        "cost": 21933.12,
+        "cost": 15565.44,
         "date": "2025-12-03",
         "price": 707.52,
-        "units": 31
+        "units": 22
       },
       {
         "action": "SELL",
         "buy_date": "2025-12-03",
         "buy_price": 707.52,
         "date": "2025-12-26",
-        "pnl": -127.41,
+        "pnl": -90.42,
         "pnl_pct": -0.58,
         "price": 703.41,
-        "proceeds": 21805.71,
-        "units": 31
+        "proceeds": 15475.02,
+        "units": 22
       },
       {
         "action": "BUY",
-        "cost": 22192.59,
+        "cost": 15749.58,
         "date": "2025-12-31",
         "price": 715.89,
-        "units": 31
+        "units": 22
       },
       {
         "action": "SELL",
         "buy_date": "2025-12-31",
         "buy_price": 715.89,
         "date": "2026-01-30",
-        "pnl": -180.42,
+        "pnl": -128.04,
         "pnl_pct": -0.81,
         "price": 710.07,
-        "proceeds": 22012.17,
-        "units": 31
+        "proceeds": 15621.54,
+        "units": 22
       },
       {
         "action": "BUY",
-        "cost": 21807.8,
+        "cost": 15577.0,
         "date": "2026-04-03",
         "price": 623.08,
-        "units": 35
+        "units": 25
       },
       {
         "action": "SELL",
         "buy_date": "2026-04-03",
         "buy_price": 623.08,
         "date": "2026-05-05",
-        "pnl": 488.25,
+        "pnl": 348.75,
         "pnl_pct": 2.24,
         "price": 637.03,
-        "proceeds": 22296.05,
-        "units": 35
+        "proceeds": 15925.75,
+        "units": 25
       },
       {
         "action": "BUY",
-        "cost": 22375.74,
+        "cost": 15794.64,
         "date": "2026-06-01",
         "price": 658.11,
-        "units": 34
+        "units": 24
       },
       {
         "action": "SELL",
         "buy_date": "2026-06-01",
         "buy_price": 658.11,
         "date": "2026-07-17",
-        "pnl": -173.4,
+        "pnl": -122.4,
         "pnl_pct": -0.77,
         "price": 653.01,
-        "proceeds": 22202.34,
-        "units": 34
+        "proceeds": 15672.24,
+        "units": 24
       },
       {
         "action": "BUY",
-        "cost": 22219.89,
+        "cost": 16159.92,
         "date": "2026-08-10",
         "price": 673.33,
-        "units": 33
+        "units": 24
       },
       {
         "action": "SELL",
         "buy_date": "2026-08-10",
         "buy_price": 673.33,
         "date": "2026-09-03",
-        "pnl": -470.25,
+        "pnl": -342.0,
         "pnl_pct": -2.12,
         "price": 659.08,
-        "proceeds": 21749.64,
-        "units": 33
+        "proceeds": 15817.92,
+        "units": 24
       }
     ],
-    "trades_count": 32
+    "trades_count": 30
   },
   "MEBL": {
     "capital_start": 100000.0,
@@ -5428,22 +5410,22 @@
   "NRL": {
     "capital_start": 100000.0,
     "cash": 287.34,
-    "equity": 138879.03,
+    "equity": 141241.98,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-09",
       "buy_price": 391.52,
       "cost": 104535.84,
-      "last_price": 519.07,
-      "market_value": 138591.69,
+      "last_price": 527.92,
+      "market_value": 140954.64,
       "symbol": "NRL",
       "units": 267,
-      "unrealized_pct": 32.58,
-      "unrealized_pnl": 34055.85
+      "unrealized_pct": 34.84,
+      "unrealized_pnl": 36418.8
     },
     "realized_pnl": 4823.18,
     "symbol": "NRL",
-    "total_return_pct": 38.88,
+    "total_return_pct": 41.24,
     "trades": [
       {
         "action": "BUY",
@@ -5655,229 +5637,229 @@
   },
   "OGDC": {
     "capital_start": 100000.0,
-    "cash": 171452.13,
-    "equity": 171452.13,
+    "cash": 171811.07,
+    "equity": 171811.07,
     "in_position": false,
     "position": null,
-    "realized_pnl": 71452.13,
+    "realized_pnl": 71811.07,
     "symbol": "OGDC",
-    "total_return_pct": 71.45,
+    "total_return_pct": 71.81,
     "trades": [
       {
         "action": "BUY",
-        "cost": 99908.78,
-        "date": "2023-10-24",
-        "price": 101.02,
-        "units": 989
+        "cost": 99973.76,
+        "date": "2023-10-25",
+        "price": 100.78,
+        "units": 992
       },
       {
         "action": "SELL",
-        "buy_date": "2023-10-24",
-        "buy_price": 101.02,
+        "buy_date": "2023-10-25",
+        "buy_price": 100.78,
         "date": "2023-12-28",
-        "pnl": 9039.46,
-        "pnl_pct": 9.05,
+        "pnl": 9304.96,
+        "pnl_pct": 9.31,
         "price": 110.16,
-        "proceeds": 108948.24,
-        "units": 989
+        "proceeds": 109278.72,
+        "units": 992
       },
       {
         "action": "BUY",
-        "cost": 109029.48,
+        "cost": 109280.7,
         "date": "2024-01-04",
         "price": 125.61,
-        "units": 868
+        "units": 870
       },
       {
         "action": "SELL",
         "buy_date": "2024-01-04",
         "buy_price": 125.61,
         "date": "2024-02-16",
-        "pnl": -15346.24,
+        "pnl": -15381.6,
         "pnl_pct": -14.08,
         "price": 107.93,
-        "proceeds": 93683.24,
-        "units": 868
+        "proceeds": 93899.1,
+        "units": 870
       },
       {
         "action": "BUY",
-        "cost": 93652.55,
+        "cost": 93915.25,
         "date": "2024-03-07",
         "price": 131.35,
-        "units": 713
+        "units": 715
       },
       {
         "action": "SELL",
         "buy_date": "2024-03-07",
         "buy_price": 131.35,
         "date": "2024-03-15",
-        "pnl": -5461.58,
+        "pnl": -5476.9,
         "pnl_pct": -5.83,
         "price": 123.69,
-        "proceeds": 88190.97,
-        "units": 713
+        "proceeds": 88438.35,
+        "units": 715
       },
       {
         "action": "BUY",
-        "cost": 88225.41,
+        "cost": 88358.48,
         "date": "2024-04-15",
         "price": 133.07,
-        "units": 663
+        "units": 664
       },
       {
         "action": "SELL",
         "buy_date": "2024-04-15",
         "buy_price": 133.07,
         "date": "2024-06-03",
-        "pnl": -596.7,
+        "pnl": -597.6,
         "pnl_pct": -0.68,
         "price": 132.17,
-        "proceeds": 87628.71,
-        "units": 663
+        "proceeds": 87760.88,
+        "units": 664
       },
       {
         "action": "BUY",
-        "cost": 87584.39,
+        "cost": 87719.76,
         "date": "2024-06-28",
         "price": 135.37,
-        "units": 647
+        "units": 648
       },
       {
         "action": "SELL",
         "buy_date": "2024-06-28",
         "buy_price": 135.37,
         "date": "2024-07-24",
-        "pnl": -2277.44,
+        "pnl": -2280.96,
         "pnl_pct": -2.6,
         "price": 131.85,
-        "proceeds": 85306.95,
-        "units": 647
+        "proceeds": 85438.8,
+        "units": 648
       },
       {
         "action": "BUY",
-        "cost": 85332.06,
+        "cost": 85465.6,
         "date": "2024-08-12",
         "price": 133.54,
-        "units": 639
+        "units": 640
       },
       {
         "action": "SELL",
         "buy_date": "2024-08-12",
         "buy_price": 133.54,
         "date": "2025-01-27",
-        "pnl": 48289.23,
+        "pnl": 48364.8,
         "pnl_pct": 56.59,
         "price": 209.11,
-        "proceeds": 133621.29,
-        "units": 639
+        "proceeds": 133830.4,
+        "units": 640
       },
       {
         "action": "BUY",
-        "cost": 133629.3,
+        "cost": 133841.41,
         "date": "2025-02-27",
         "price": 212.11,
-        "units": 630
+        "units": 631
       },
       {
         "action": "SELL",
         "buy_date": "2025-02-27",
         "buy_price": 212.11,
         "date": "2025-04-11",
-        "pnl": 31.5,
+        "pnl": 31.55,
         "pnl_pct": 0.02,
         "price": 212.16,
-        "proceeds": 133660.8,
-        "units": 630
+        "proceeds": 133872.96,
+        "units": 631
       },
       {
         "action": "BUY",
-        "cost": 133582.7,
+        "cost": 133794.4,
         "date": "2025-05-19",
         "price": 211.7,
-        "units": 631
+        "units": 632
       },
       {
         "action": "SELL",
         "buy_date": "2025-05-19",
         "buy_price": 211.7,
         "date": "2025-10-13",
-        "pnl": 25959.34,
+        "pnl": 26000.48,
         "pnl_pct": 19.43,
         "price": 252.84,
-        "proceeds": 159542.04,
-        "units": 631
+        "proceeds": 159794.88,
+        "units": 632
       },
       {
         "action": "BUY",
-        "cost": 159389.16,
+        "cost": 159931.3,
         "date": "2025-12-01",
         "price": 271.07,
-        "units": 588
+        "units": 590
       },
       {
         "action": "SELL",
         "buy_date": "2025-12-01",
         "buy_price": 271.07,
         "date": "2026-02-13",
-        "pnl": 13917.96,
+        "pnl": 13965.3,
         "pnl_pct": 8.73,
         "price": 294.74,
-        "proceeds": 173307.12,
-        "units": 588
+        "proceeds": 173896.6,
+        "units": 590
       },
       {
         "action": "BUY",
-        "cost": 173336.42,
+        "cost": 173636.31,
         "date": "2026-04-10",
         "price": 299.89,
-        "units": 578
+        "units": 579
       },
       {
         "action": "SELL",
         "buy_date": "2026-04-10",
         "buy_price": 299.89,
         "date": "2026-06-12",
-        "pnl": 10461.8,
+        "pnl": 10479.9,
         "pnl_pct": 6.04,
         "price": 317.99,
-        "proceeds": 183798.22,
-        "units": 578
+        "proceeds": 184116.21,
+        "units": 579
       },
       {
         "action": "BUY",
-        "cost": 183722.0,
+        "cost": 184390.08,
         "date": "2026-06-17",
         "price": 334.04,
-        "units": 550
+        "units": 552
       },
       {
         "action": "SELL",
         "buy_date": "2026-06-17",
         "buy_price": 334.04,
         "date": "2026-07-16",
-        "pnl": -5874.0,
+        "pnl": -5895.36,
         "pnl_pct": -3.2,
         "price": 323.36,
-        "proceeds": 177848.0,
-        "units": 550
+        "proceeds": 178494.72,
+        "units": 552
       },
       {
         "action": "BUY",
-        "cost": 178121.92,
+        "cost": 178449.35,
         "date": "2026-08-25",
         "price": 327.43,
-        "units": 544
+        "units": 545
       },
       {
         "action": "SELL",
         "buy_date": "2026-08-25",
         "buy_price": 327.43,
         "date": "2026-09-14",
-        "pnl": -6691.2,
+        "pnl": -6703.5,
         "pnl_pct": -3.76,
         "price": 315.13,
-        "proceeds": 171430.72,
-        "units": 544
+        "proceeds": 171745.85,
+        "units": 545
       }
     ],
     "trades_count": 24
@@ -6450,23 +6432,13 @@
   },
   "PRL": {
     "capital_start": 100000.0,
-    "cash": 5.38,
-    "equity": 232076.42,
-    "in_position": true,
-    "position": {
-      "buy_date": "2026-06-18",
-      "buy_price": 36.64,
-      "cost": 102298.88,
-      "last_price": 83.12,
-      "market_value": 232071.04,
-      "symbol": "PRL",
-      "units": 2792,
-      "unrealized_pct": 126.86,
-      "unrealized_pnl": 129772.16
-    },
-    "realized_pnl": 2304.26,
+    "cash": 231657.62,
+    "equity": 231657.62,
+    "in_position": false,
+    "position": null,
+    "realized_pnl": 131657.62,
     "symbol": "PRL",
-    "total_return_pct": 132.08,
+    "total_return_pct": 131.66,
     "trades": [
       {
         "action": "BUY",
@@ -6780,9 +6752,20 @@
         "date": "2026-06-18",
         "price": 36.64,
         "units": 2792
+      },
+      {
+        "action": "SELL",
+        "buy_date": "2026-06-18",
+        "buy_price": 36.64,
+        "date": "2026-09-18",
+        "pnl": 129353.36,
+        "pnl_pct": 126.45,
+        "price": 82.97,
+        "proceeds": 231652.24,
+        "units": 2792
       }
     ],
-    "trades_count": 35
+    "trades_count": 36
   },
   "PSO": {
     "capital_start": 100000.0,
@@ -8039,268 +8022,250 @@
   },
   "SYS": {
     "capital_start": 100000.0,
-    "cash": 26733.18,
-    "equity": 26733.18,
+    "cash": 25770.58,
+    "equity": 25770.58,
     "in_position": false,
     "position": null,
-    "realized_pnl": -73266.82,
+    "realized_pnl": -74229.42,
     "symbol": "SYS",
-    "total_return_pct": -73.27,
+    "total_return_pct": -74.23,
     "trades": [
       {
         "action": "BUY",
-        "cost": 99749.9,
-        "date": "2023-10-27",
-        "price": 413.9,
-        "units": 241
-      },
-      {
-        "action": "SELL",
-        "buy_date": "2023-10-27",
-        "buy_price": 413.9,
-        "date": "2023-12-21",
-        "pnl": 3530.65,
-        "pnl_pct": 3.54,
-        "price": 428.55,
-        "proceeds": 103280.55,
-        "units": 241
-      },
-      {
-        "action": "BUY",
-        "cost": 103375.8,
+        "cost": 99698.4,
         "date": "2024-02-28",
         "price": 408.6,
-        "units": 253
+        "units": 244
       },
       {
         "action": "SELL",
         "buy_date": "2024-02-28",
         "buy_price": 408.6,
         "date": "2024-03-25",
-        "pnl": -4227.63,
+        "pnl": -4077.24,
         "pnl_pct": -4.09,
         "price": 391.89,
-        "proceeds": 99148.17,
-        "units": 253
+        "proceeds": 95621.16,
+        "units": 244
       },
       {
         "action": "BUY",
-        "cost": 99271.32,
+        "cost": 95683.2,
         "date": "2024-04-16",
         "price": 398.68,
-        "units": 249
+        "units": 240
       },
       {
         "action": "SELL",
         "buy_date": "2024-04-16",
         "buy_price": 398.68,
         "date": "2024-05-03",
-        "pnl": -4242.96,
+        "pnl": -4089.6,
         "pnl_pct": -4.27,
         "price": 381.64,
-        "proceeds": 95028.36,
-        "units": 249
+        "proceeds": 91593.6,
+        "units": 240
       },
       {
         "action": "BUY",
-        "cost": 94954.86,
+        "cost": 91666.38,
         "date": "2024-05-21",
         "price": 411.06,
-        "units": 231
+        "units": 223
       },
       {
         "action": "SELL",
         "buy_date": "2024-05-21",
         "buy_price": 411.06,
         "date": "2024-07-02",
-        "pnl": 2189.88,
+        "pnl": 2114.04,
         "pnl_pct": 2.31,
         "price": 420.54,
-        "proceeds": 97144.74,
-        "units": 231
+        "proceeds": 93780.42,
+        "units": 223
       },
       {
         "action": "BUY",
-        "cost": 97248.84,
+        "cost": 93836.6,
         "date": "2024-07-08",
         "price": 426.53,
-        "units": 228
+        "units": 220
       },
       {
         "action": "SELL",
         "buy_date": "2024-07-08",
         "buy_price": 426.53,
         "date": "2024-08-02",
-        "pnl": -604.2,
+        "pnl": -583.0,
         "pnl_pct": -0.62,
         "price": 423.88,
-        "proceeds": 96644.64,
-        "units": 228
+        "proceeds": 93253.6,
+        "units": 220
       },
       {
         "action": "BUY",
-        "cost": 96320.07,
+        "cost": 92984.31,
         "date": "2024-10-11",
         "price": 416.97,
-        "units": 231
+        "units": 223
       },
       {
         "action": "SELL",
         "buy_date": "2024-10-11",
         "buy_price": 416.97,
         "date": "2025-01-13",
-        "pnl": 33649.77,
+        "pnl": 32484.41,
         "pnl_pct": 34.94,
         "price": 562.64,
-        "proceeds": 129969.84,
-        "units": 231
+        "proceeds": 125468.72,
+        "units": 223
       },
       {
         "action": "BUY",
-        "cost": 129816.0,
+        "cost": 125777.28,
         "date": "2025-02-03",
         "price": 576.96,
-        "units": 225
+        "units": 218
       },
       {
         "action": "SELL",
         "buy_date": "2025-02-03",
         "buy_price": 576.96,
         "date": "2025-02-10",
-        "pnl": -3548.25,
+        "pnl": -3437.86,
         "pnl_pct": -2.73,
         "price": 561.19,
-        "proceeds": 126267.75,
-        "units": 225
+        "proceeds": 122339.42,
+        "units": 218
       },
       {
         "action": "BUY",
-        "cost": 126438.75,
+        "cost": 121943.15,
         "date": "2025-03-25",
         "price": 561.95,
-        "units": 225
+        "units": 217
       },
       {
         "action": "SELL",
         "buy_date": "2025-03-25",
         "buy_price": 561.95,
         "date": "2025-04-09",
-        "pnl": -16924.5,
+        "pnl": -16322.74,
         "pnl_pct": -13.39,
         "price": 486.73,
-        "proceeds": 109514.25,
-        "units": 225
+        "proceeds": 105620.41,
+        "units": 217
       },
       {
         "action": "BUY",
-        "cost": 109388.51,
+        "cost": 105724.78,
         "date": "2025-05-05",
         "price": 523.39,
-        "units": 209
+        "units": 202
       },
       {
         "action": "SELL",
         "buy_date": "2025-05-05",
         "buy_price": 523.39,
         "date": "2025-05-12",
-        "pnl": 3143.36,
+        "pnl": 3038.08,
         "pnl_pct": 2.87,
         "price": 538.43,
-        "proceeds": 112531.87,
-        "units": 209
+        "proceeds": 108762.86,
+        "units": 202
       },
       {
         "action": "BUY",
-        "cost": 112818.2,
+        "cost": 109039.6,
         "date": "2025-05-15",
         "price": 539.8,
-        "units": 209
+        "units": 202
       },
       {
         "action": "SELL",
         "buy_date": "2025-05-15",
         "buy_price": 539.8,
         "date": "2025-06-04",
-        "pnl": -90666.29,
+        "pnl": -87629.62,
         "pnl_pct": -80.36,
         "price": 105.99,
-        "proceeds": 22151.91,
-        "units": 209
+        "proceeds": 21409.98,
+        "units": 202
       },
       {
         "action": "BUY",
-        "cost": 22296.77,
+        "cost": 21476.03,
         "date": "2025-08-06",
         "price": 136.79,
-        "units": 163
+        "units": 157
       },
       {
         "action": "SELL",
         "buy_date": "2025-08-06",
         "buy_price": 136.79,
         "date": "2025-11-03",
-        "pnl": 2836.2,
+        "pnl": 2731.8,
         "pnl_pct": 12.72,
         "price": 154.19,
-        "proceeds": 25132.97,
-        "units": 163
+        "proceeds": 24207.83,
+        "units": 157
       },
       {
         "action": "BUY",
-        "cost": 25088.96,
+        "cost": 24165.44,
         "date": "2025-12-02",
         "price": 153.92,
-        "units": 163
+        "units": 157
       },
       {
         "action": "SELL",
         "buy_date": "2025-12-02",
         "buy_price": 153.92,
         "date": "2026-01-16",
-        "pnl": 1067.65,
+        "pnl": 1028.35,
         "pnl_pct": 4.26,
         "price": 160.47,
-        "proceeds": 26156.61,
-        "units": 163
+        "proceeds": 25193.79,
+        "units": 157
       },
       {
         "action": "BUY",
-        "cost": 26095.8,
+        "cost": 25254.0,
         "date": "2026-03-27",
         "price": 140.3,
-        "units": 186
+        "units": 180
       },
       {
         "action": "SELL",
         "buy_date": "2026-03-27",
         "buy_price": 140.3,
         "date": "2026-06-03",
-        "pnl": 1592.16,
+        "pnl": 1540.8,
         "pnl_pct": 6.1,
         "price": 148.86,
-        "proceeds": 27687.96,
-        "units": 186
+        "proceeds": 26794.8,
+        "units": 180
       },
       {
         "action": "BUY",
-        "cost": 27686.12,
+        "cost": 26752.88,
         "date": "2026-06-17",
         "price": 155.54,
-        "units": 178
+        "units": 172
       },
       {
         "action": "SELL",
         "buy_date": "2026-06-17",
         "buy_price": 155.54,
         "date": "2026-07-01",
-        "pnl": -1062.66,
+        "pnl": -1026.84,
         "pnl_pct": -3.84,
         "price": 149.57,
-        "proceeds": 26623.46,
-        "units": 178
+        "proceeds": 25726.04,
+        "units": 172
       }
     ],
-    "trades_count": 28
+    "trades_count": 26
   },
   "TREET": {
     "capital_start": 100000.0,
