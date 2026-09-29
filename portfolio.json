@@ -267,22 +267,22 @@
   "ATRL": {
     "capital_start": 100000.0,
     "cash": 610.89,
-    "equity": 221909.45,
+    "equity": 222772.37,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-13",
       "buy_price": 926.51,
       "cost": 174183.88,
-      "last_price": 1177.12,
-      "market_value": 221298.56,
+      "last_price": 1181.71,
+      "market_value": 222161.48,
       "symbol": "ATRL",
       "units": 188,
-      "unrealized_pct": 27.05,
-      "unrealized_pnl": 47114.68
+      "unrealized_pct": 27.54,
+      "unrealized_pnl": 47977.6
     },
     "realized_pnl": 74794.77,
     "symbol": "ATRL",
-    "total_return_pct": 121.91,
+    "total_return_pct": 122.77,
     "trades": [
       {
         "action": "BUY",
@@ -688,22 +688,22 @@
   "CPHL": {
     "capital_start": 100000.0,
     "cash": 31.38,
-    "equity": 148852.5,
+    "equity": 148005.78,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-23",
       "buy_price": 74.95,
       "cost": 151099.2,
-      "last_price": 73.82,
-      "market_value": 148821.12,
+      "last_price": 73.4,
+      "market_value": 147974.4,
       "symbol": "CPHL",
       "units": 2016,
-      "unrealized_pct": -1.51,
-      "unrealized_pnl": -2278.08
+      "unrealized_pct": -2.07,
+      "unrealized_pnl": -3124.8
     },
     "realized_pnl": 51130.58,
     "symbol": "CPHL",
-    "total_return_pct": 48.85,
+    "total_return_pct": 48.01,
     "trades": [
       {
         "action": "BUY",
@@ -1446,22 +1446,22 @@
   "EFERT": {
     "capital_start": 100000.0,
     "cash": 146.04,
-    "equity": 141736.84,
+    "equity": 141050.64,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-07",
       "buy_price": 189.52,
       "cost": 138349.6,
-      "last_price": 193.96,
-      "market_value": 141590.8,
+      "last_price": 193.02,
+      "market_value": 140904.6,
       "symbol": "EFERT",
       "units": 730,
-      "unrealized_pct": 2.34,
-      "unrealized_pnl": 3241.2
+      "unrealized_pct": 1.85,
+      "unrealized_pnl": 2555.0
     },
     "realized_pnl": 38495.64,
     "symbol": "EFERT",
-    "total_return_pct": 41.74,
+    "total_return_pct": 41.05,
     "trades": [
       {
         "action": "BUY",
@@ -4898,22 +4898,22 @@
   "NETSOL": {
     "capital_start": 100000.0,
     "cash": 26.86,
-    "equity": 79645.47,
+    "equity": 77151.98,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-22",
       "buy_price": 124.5,
       "cost": 79804.5,
-      "last_price": 124.21,
-      "market_value": 79618.61,
+      "last_price": 120.32,
+      "market_value": 77125.12,
       "symbol": "NETSOL",
       "units": 641,
-      "unrealized_pct": -0.23,
-      "unrealized_pnl": -185.89
+      "unrealized_pct": -3.36,
+      "unrealized_pnl": -2679.38
     },
     "realized_pnl": -20168.64,
     "symbol": "NETSOL",
-    "total_return_pct": -20.35,
+    "total_return_pct": -22.85,
     "trades": [
       {
         "action": "BUY",
@@ -5445,22 +5445,22 @@
   "NRL": {
     "capital_start": 100000.0,
     "cash": 287.34,
-    "equity": 151724.4,
+    "equity": 154963.11,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-09",
       "buy_price": 391.52,
       "cost": 104535.84,
-      "last_price": 567.18,
-      "market_value": 151437.06,
+      "last_price": 579.31,
+      "market_value": 154675.77,
       "symbol": "NRL",
       "units": 267,
-      "unrealized_pct": 44.87,
-      "unrealized_pnl": 46901.22
+      "unrealized_pct": 47.96,
+      "unrealized_pnl": 50139.93
     },
     "realized_pnl": 4823.18,
     "symbol": "NRL",
-    "total_return_pct": 51.72,
+    "total_return_pct": 54.96,
     "trades": [
       {
         "action": "BUY",
@@ -6185,22 +6185,22 @@
   "PPL": {
     "capital_start": 100000.0,
     "cash": 168.21,
-    "equity": 101812.61,
+    "equity": 100395.81,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-25",
       "buy_price": 231.68,
       "cost": 101939.2,
-      "last_price": 231.01,
-      "market_value": 101644.4,
+      "last_price": 227.79,
+      "market_value": 100227.6,
       "symbol": "PPL",
       "units": 440,
-      "unrealized_pct": -0.29,
-      "unrealized_pnl": -294.8
+      "unrealized_pct": -1.68,
+      "unrealized_pnl": -1711.6
     },
     "realized_pnl": 2107.41,
     "symbol": "PPL",
-    "total_return_pct": 1.81,
+    "total_return_pct": 0.4,
     "trades": [
       {
         "action": "BUY",
@@ -6467,22 +6467,22 @@
   "PRL": {
     "capital_start": 100000.0,
     "cash": 17.66,
-    "equity": 237163.28,
+    "equity": 232738.64,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-24",
       "buy_price": 92.14,
       "cost": 231639.96,
-      "last_price": 94.33,
-      "market_value": 237145.62,
+      "last_price": 92.57,
+      "market_value": 232720.98,
       "symbol": "PRL",
       "units": 2514,
-      "unrealized_pct": 2.38,
-      "unrealized_pnl": 5505.66
+      "unrealized_pct": 0.47,
+      "unrealized_pnl": 1081.02
     },
     "realized_pnl": 131657.62,
     "symbol": "PRL",
-    "total_return_pct": 137.16,
+    "total_return_pct": 132.74,
     "trades": [
       {
         "action": "BUY",
@@ -8320,10 +8320,20 @@
   },
   "TREET": {
     "capital_start": 100000.0,
-    "cash": 92626.85,
+    "cash": 9.99,
     "equity": 92626.85,
-    "in_position": false,
-    "position": null,
+    "in_position": true,
+    "position": {
+      "buy_date": "2026-09-29",
+      "buy_price": 22.54,
+      "cost": 92616.86,
+      "last_price": 22.54,
+      "market_value": 92616.86,
+      "symbol": "TREET",
+      "units": 4109,
+      "unrealized_pct": 0.0,
+      "unrealized_pnl": 0.0
+    },
     "realized_pnl": -7373.15,
     "symbol": "TREET",
     "total_return_pct": -7.37,
@@ -8633,8 +8643,15 @@
         "price": 22.87,
         "proceeds": 92623.5,
         "units": 4050
+      },
+      {
+        "action": "BUY",
+        "cost": 92616.86,
+        "date": "2026-09-29",
+        "price": 22.54,
+        "units": 4109
       }
     ],
-    "trades_count": 34
+    "trades_count": 35
   }
 }
