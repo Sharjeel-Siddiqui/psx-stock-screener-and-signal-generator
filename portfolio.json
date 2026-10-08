@@ -267,22 +267,22 @@
   "ATRL": {
     "capital_start": 100000.0,
     "cash": 610.89,
-    "equity": 229724.61,
+    "equity": 226440.25,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-13",
       "buy_price": 926.51,
       "cost": 174183.88,
-      "last_price": 1218.69,
-      "market_value": 229113.72,
+      "last_price": 1201.22,
+      "market_value": 225829.36,
       "symbol": "ATRL",
       "units": 188,
-      "unrealized_pct": 31.54,
-      "unrealized_pnl": 54929.84
+      "unrealized_pct": 29.65,
+      "unrealized_pnl": 51645.48
     },
     "realized_pnl": 74794.77,
     "symbol": "ATRL",
-    "total_return_pct": 129.72,
+    "total_return_pct": 126.44,
     "trades": [
       {
         "action": "BUY",
@@ -1447,22 +1447,22 @@
   "EFERT": {
     "capital_start": 100000.0,
     "cash": 146.04,
-    "equity": 141036.04,
+    "equity": 139181.84,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-07",
       "buy_price": 189.52,
       "cost": 138349.6,
-      "last_price": 193.0,
-      "market_value": 140890.0,
+      "last_price": 190.46,
+      "market_value": 139035.8,
       "symbol": "EFERT",
       "units": 730,
-      "unrealized_pct": 1.84,
-      "unrealized_pnl": 2540.4
+      "unrealized_pct": 0.5,
+      "unrealized_pnl": 686.2
     },
     "realized_pnl": 38495.64,
     "symbol": "EFERT",
-    "total_return_pct": 41.04,
+    "total_return_pct": 39.18,
     "trades": [
       {
         "action": "BUY",
@@ -5465,22 +5465,22 @@
   "NRL": {
     "capital_start": 100000.0,
     "cash": 287.34,
-    "equity": 171639.93,
+    "equity": 166970.1,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-09",
       "buy_price": 391.52,
       "cost": 104535.84,
-      "last_price": 641.77,
-      "market_value": 171352.59,
+      "last_price": 624.28,
+      "market_value": 166682.76,
       "symbol": "NRL",
       "units": 267,
-      "unrealized_pct": 63.92,
-      "unrealized_pnl": 66816.75
+      "unrealized_pct": 59.45,
+      "unrealized_pnl": 62146.92
     },
     "realized_pnl": 4823.18,
     "symbol": "NRL",
-    "total_return_pct": 71.64,
+    "total_return_pct": 66.97,
     "trades": [
       {
         "action": "BUY",
@@ -6488,22 +6488,22 @@
   "PRL": {
     "capital_start": 100000.0,
     "cash": 17.66,
-    "equity": 237138.14,
+    "equity": 229093.34,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-24",
       "buy_price": 92.14,
       "cost": 231639.96,
-      "last_price": 94.32,
-      "market_value": 237120.48,
+      "last_price": 91.12,
+      "market_value": 229075.68,
       "symbol": "PRL",
       "units": 2514,
-      "unrealized_pct": 2.37,
-      "unrealized_pnl": 5480.52
+      "unrealized_pct": -1.11,
+      "unrealized_pnl": -2564.28
     },
     "realized_pnl": 131657.62,
     "symbol": "PRL",
-    "total_return_pct": 137.14,
+    "total_return_pct": 129.09,
     "trades": [
       {
         "action": "BUY",
