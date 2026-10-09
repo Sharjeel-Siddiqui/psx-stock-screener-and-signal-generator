@@ -520,6 +520,15 @@
       "sent_at": "2026-09-28T23:40:30.663904+05:00",
       "symbol": "TREET"
     },
+    "TREET:EARLY_BUY:2026-10-09": {
+      "action": "EARLY_BUY",
+      "date": "2026-10-09",
+      "ema21": 22.300841177676126,
+      "ema7": 22.40379918189556,
+      "price": 23.72,
+      "sent_at": "2026-10-09T22:30:32.949478+05:00",
+      "symbol": "TREET"
+    },
     "TREET:EARLY_SELL:2026-09-30": {
       "action": "EARLY_SELL",
       "date": "2026-09-30",
