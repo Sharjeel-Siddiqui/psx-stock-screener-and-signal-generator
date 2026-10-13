@@ -267,22 +267,22 @@
   "ATRL": {
     "capital_start": 100000.0,
     "cash": 610.89,
-    "equity": 223659.73,
+    "equity": 222672.73,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-13",
       "buy_price": 926.51,
       "cost": 174183.88,
-      "last_price": 1186.43,
-      "market_value": 223048.84,
+      "last_price": 1181.18,
+      "market_value": 222061.84,
       "symbol": "ATRL",
       "units": 188,
-      "unrealized_pct": 28.05,
-      "unrealized_pnl": 48864.96
+      "unrealized_pct": 27.49,
+      "unrealized_pnl": 47877.96
     },
     "realized_pnl": 74794.77,
     "symbol": "ATRL",
-    "total_return_pct": 123.66,
+    "total_return_pct": 122.67,
     "trades": [
       {
         "action": "BUY",
@@ -1411,22 +1411,22 @@
   "EFERT": {
     "capital_start": 100000.0,
     "cash": 146.04,
-    "equity": 139670.94,
+    "equity": 139926.44,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-07",
       "buy_price": 189.52,
       "cost": 138349.6,
-      "last_price": 191.13,
-      "market_value": 139524.9,
+      "last_price": 191.48,
+      "market_value": 139780.4,
       "symbol": "EFERT",
       "units": 730,
-      "unrealized_pct": 0.85,
-      "unrealized_pnl": 1175.3
+      "unrealized_pct": 1.03,
+      "unrealized_pnl": 1430.8
     },
     "realized_pnl": 38495.64,
     "symbol": "EFERT",
-    "total_return_pct": 39.67,
+    "total_return_pct": 39.93,
     "trades": [
       {
         "action": "BUY",
@@ -5411,22 +5411,22 @@
   "NRL": {
     "capital_start": 100000.0,
     "cash": 287.34,
-    "equity": 172734.63,
+    "equity": 171613.23,
     "in_position": true,
     "position": {
       "buy_date": "2026-07-09",
       "buy_price": 391.52,
       "cost": 104535.84,
-      "last_price": 645.87,
-      "market_value": 172447.29,
+      "last_price": 641.67,
+      "market_value": 171325.89,
       "symbol": "NRL",
       "units": 267,
-      "unrealized_pct": 64.96,
-      "unrealized_pnl": 67911.45
+      "unrealized_pct": 63.89,
+      "unrealized_pnl": 66790.05
     },
     "realized_pnl": 4823.18,
     "symbol": "NRL",
-    "total_return_pct": 72.73,
+    "total_return_pct": 71.61,
     "trades": [
       {
         "action": "BUY",
@@ -6434,22 +6434,22 @@
   "PRL": {
     "capital_start": 100000.0,
     "cash": 17.66,
-    "equity": 234950.96,
+    "equity": 234297.32,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-24",
       "buy_price": 92.14,
       "cost": 231639.96,
-      "last_price": 93.45,
-      "market_value": 234933.3,
+      "last_price": 93.19,
+      "market_value": 234279.66,
       "symbol": "PRL",
       "units": 2514,
-      "unrealized_pct": 1.42,
-      "unrealized_pnl": 3293.34
+      "unrealized_pct": 1.14,
+      "unrealized_pnl": 2639.7
     },
     "realized_pnl": 131657.62,
     "symbol": "PRL",
-    "total_return_pct": 134.95,
+    "total_return_pct": 134.3,
     "trades": [
       {
         "action": "BUY",
@@ -6788,22 +6788,22 @@
   "PSO": {
     "capital_start": 100000.0,
     "cash": 180.35,
-    "equity": 232210.63,
+    "equity": 233166.71,
     "in_position": true,
     "position": {
       "buy_date": "2026-10-12",
       "buy_price": 359.18,
       "cost": 232030.28,
-      "last_price": 359.18,
-      "market_value": 232030.28,
+      "last_price": 360.66,
+      "market_value": 232986.36,
       "symbol": "PSO",
       "units": 646,
-      "unrealized_pct": 0.0,
-      "unrealized_pnl": 0.0
+      "unrealized_pct": 0.41,
+      "unrealized_pnl": 956.08
     },
     "realized_pnl": 132210.63,
     "symbol": "PSO",
-    "total_return_pct": 132.21,
+    "total_return_pct": 133.17,
     "trades": [
       {
         "action": "BUY",
@@ -8322,10 +8322,20 @@
   },
   "TREET": {
     "capital_start": 100000.0,
-    "cash": 87312.62,
+    "cash": 20.03,
     "equity": 87312.62,
-    "in_position": false,
-    "position": null,
+    "in_position": true,
+    "position": {
+      "buy_date": "2026-10-13",
+      "buy_price": 23.87,
+      "cost": 87292.59,
+      "last_price": 23.87,
+      "market_value": 87292.59,
+      "symbol": "TREET",
+      "units": 3657,
+      "unrealized_pct": 0.0,
+      "unrealized_pnl": 0.0
+    },
     "realized_pnl": -12687.38,
     "symbol": "TREET",
     "total_return_pct": -12.69,
@@ -8653,8 +8663,15 @@
         "price": 21.36,
         "proceeds": 87298.32,
         "units": 4087
+      },
+      {
+        "action": "BUY",
+        "cost": 87292.59,
+        "date": "2026-10-13",
+        "price": 23.87,
+        "units": 3657
       }
     ],
-    "trades_count": 36
+    "trades_count": 37
   }
 }
