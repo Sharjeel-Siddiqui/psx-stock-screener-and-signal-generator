@@ -1448,22 +1448,22 @@
   "EFERT": {
     "capital_start": 100000.0,
     "cash": 146.04,
-    "equity": 142831.84,
+    "equity": 144737.14,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-07",
       "buy_price": 189.52,
       "cost": 138349.6,
-      "last_price": 195.46,
-      "market_value": 142685.8,
+      "last_price": 198.07,
+      "market_value": 144591.1,
       "symbol": "EFERT",
       "units": 730,
-      "unrealized_pct": 3.13,
-      "unrealized_pnl": 4336.2
+      "unrealized_pct": 4.51,
+      "unrealized_pnl": 6241.5
     },
     "realized_pnl": 38495.64,
     "symbol": "EFERT",
-    "total_return_pct": 42.83,
+    "total_return_pct": 44.74,
     "trades": [
       {
         "action": "BUY",
@@ -6490,22 +6490,22 @@
   "PRL": {
     "capital_start": 100000.0,
     "cash": 17.66,
-    "equity": 236735.9,
+    "equity": 253454.0,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-24",
       "buy_price": 92.14,
       "cost": 231639.96,
-      "last_price": 94.16,
-      "market_value": 236718.24,
+      "last_price": 100.81,
+      "market_value": 253436.34,
       "symbol": "PRL",
       "units": 2514,
-      "unrealized_pct": 2.19,
-      "unrealized_pnl": 5078.28
+      "unrealized_pct": 9.41,
+      "unrealized_pnl": 21796.38
     },
     "realized_pnl": 131657.62,
     "symbol": "PRL",
-    "total_return_pct": 136.74,
+    "total_return_pct": 153.45,
     "trades": [
       {
         "action": "BUY",
@@ -8362,22 +8362,22 @@
   "TREET": {
     "capital_start": 100000.0,
     "cash": 11.21,
-    "equity": 83174.51,
+    "equity": 84157.03,
     "in_position": true,
     "position": {
       "buy_date": "2026-10-13",
       "buy_price": 23.87,
       "cost": 83759.83,
-      "last_price": 23.7,
-      "market_value": 83163.3,
+      "last_price": 23.98,
+      "market_value": 84145.82,
       "symbol": "TREET",
       "units": 3509,
-      "unrealized_pct": -0.71,
-      "unrealized_pnl": -596.53
+      "unrealized_pct": 0.46,
+      "unrealized_pnl": 385.99
     },
     "realized_pnl": -16228.96,
     "symbol": "TREET",
-    "total_return_pct": -16.83,
+    "total_return_pct": -15.84,
     "trades": [
       {
         "action": "BUY",
