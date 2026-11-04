@@ -1430,22 +1430,22 @@
   "EFERT": {
     "capital_start": 100000.0,
     "cash": 146.04,
-    "equity": 147387.04,
+    "equity": 151956.84,
     "in_position": true,
     "position": {
       "buy_date": "2026-09-07",
       "buy_price": 189.52,
       "cost": 138349.6,
-      "last_price": 201.7,
-      "market_value": 147241.0,
+      "last_price": 207.96,
+      "market_value": 151810.8,
       "symbol": "EFERT",
       "units": 730,
-      "unrealized_pct": 6.43,
-      "unrealized_pnl": 8891.4
+      "unrealized_pct": 9.73,
+      "unrealized_pnl": 13461.2
     },
     "realized_pnl": 38495.64,
     "symbol": "EFERT",
-    "total_return_pct": 47.39,
+    "total_return_pct": 51.96,
     "trades": [
       {
         "action": "BUY",
@@ -2206,22 +2206,22 @@
   "FCCL": {
     "capital_start": 100000.0,
     "cash": 38.94,
-    "equity": 213848.9,
+    "equity": 222957.22,
     "in_position": true,
     "position": {
       "buy_date": "2026-11-02",
       "buy_price": 53.81,
       "cost": 211258.06,
-      "last_price": 54.46,
-      "market_value": 213809.96,
+      "last_price": 56.78,
+      "market_value": 222918.28,
       "symbol": "FCCL",
       "units": 3926,
-      "unrealized_pct": 1.21,
-      "unrealized_pnl": 2551.9
+      "unrealized_pct": 5.52,
+      "unrealized_pnl": 11660.22
     },
     "realized_pnl": 111297.0,
     "symbol": "FCCL",
-    "total_return_pct": 113.85,
+    "total_return_pct": 122.96,
     "trades": [
       {
         "action": "BUY",
@@ -2416,22 +2416,22 @@
   "FFC": {
     "capital_start": 100000.0,
     "cash": 423.09,
-    "equity": 375897.81,
+    "equity": 381572.21,
     "in_position": true,
     "position": {
       "buy_date": "2026-10-30",
       "buy_price": 559.49,
       "cost": 367025.44,
-      "last_price": 572.37,
-      "market_value": 375474.72,
+      "last_price": 581.02,
+      "market_value": 381149.12,
       "symbol": "FFC",
       "units": 656,
-      "unrealized_pct": 2.3,
-      "unrealized_pnl": 8449.28
+      "unrealized_pct": 3.85,
+      "unrealized_pnl": 14123.68
     },
     "realized_pnl": 267448.53,
     "symbol": "FFC",
-    "total_return_pct": 275.9,
+    "total_return_pct": 281.57,
     "trades": [
       {
         "action": "BUY",
@@ -3259,22 +3259,22 @@
   "GHNI": {
     "capital_start": 100000.0,
     "cash": 286.49,
-    "equity": 533581.55,
+    "equity": 546499.07,
     "in_position": true,
     "position": {
       "buy_date": "2026-10-30",
       "buy_price": 1151.44,
       "cost": 536571.04,
-      "last_price": 1144.41,
-      "market_value": 533295.06,
+      "last_price": 1172.13,
+      "market_value": 546212.58,
       "symbol": "GHNI",
       "units": 466,
-      "unrealized_pct": -0.61,
-      "unrealized_pnl": -3275.98
+      "unrealized_pct": 1.8,
+      "unrealized_pnl": 9641.54
     },
     "realized_pnl": 436857.53,
     "symbol": "GHNI",
-    "total_return_pct": 433.58,
+    "total_return_pct": 446.5,
     "trades": [
       {
         "action": "BUY",
@@ -4191,10 +4191,20 @@
   },
   "MARI": {
     "capital_start": 100000.0,
-    "cash": 15860.58,
+    "cash": 58.5,
     "equity": 15860.58,
-    "in_position": false,
-    "position": null,
+    "in_position": true,
+    "position": {
+      "buy_date": "2026-11-04",
+      "buy_price": 658.42,
+      "cost": 15802.08,
+      "last_price": 658.42,
+      "market_value": 15802.08,
+      "symbol": "MARI",
+      "units": 24,
+      "unrealized_pct": 0.0,
+      "unrealized_pnl": 0.0
+    },
     "realized_pnl": -84139.42,
     "symbol": "MARI",
     "total_return_pct": -84.14,
@@ -4468,9 +4478,16 @@
         "price": 659.08,
         "proceeds": 15817.92,
         "units": 24
+      },
+      {
+        "action": "BUY",
+        "cost": 15802.08,
+        "date": "2026-11-04",
+        "price": 658.42,
+        "units": 24
       }
     ],
-    "trades_count": 30
+    "trades_count": 31
   },
   "MEBL": {
     "capital_start": 100000.0,
@@ -6504,23 +6521,13 @@
   },
   "PRL": {
     "capital_start": 100000.0,
-    "cash": 17.66,
-    "equity": 212048.42,
-    "in_position": true,
-    "position": {
-      "buy_date": "2026-09-24",
-      "buy_price": 92.14,
-      "cost": 231639.96,
-      "last_price": 84.34,
-      "market_value": 212030.76,
-      "symbol": "PRL",
-      "units": 2514,
-      "unrealized_pct": -8.47,
-      "unrealized_pnl": -19609.2
-    },
-    "realized_pnl": 131657.62,
+    "cash": 215366.9,
+    "equity": 215366.9,
+    "in_position": false,
+    "position": null,
+    "realized_pnl": 115366.9,
     "symbol": "PRL",
-    "total_return_pct": 112.05,
+    "total_return_pct": 115.37,
     "trades": [
       {
         "action": "BUY",
@@ -6852,29 +6859,30 @@
         "date": "2026-09-24",
         "price": 92.14,
         "units": 2514
+      },
+      {
+        "action": "SELL",
+        "buy_date": "2026-09-24",
+        "buy_price": 92.14,
+        "date": "2026-11-04",
+        "pnl": -16290.72,
+        "pnl_pct": -7.03,
+        "price": 85.66,
+        "proceeds": 215349.24,
+        "units": 2514
       }
     ],
-    "trades_count": 37
+    "trades_count": 38
   },
   "PSO": {
     "capital_start": 100000.0,
-    "cash": 354.77,
-    "equity": 226390.17,
-    "in_position": true,
-    "position": {
-      "buy_date": "2026-10-30",
-      "buy_price": 355.44,
-      "cost": 229614.24,
-      "last_price": 349.9,
-      "market_value": 226035.4,
-      "symbol": "PSO",
-      "units": 646,
-      "unrealized_pct": -1.56,
-      "unrealized_pnl": -3578.84
-    },
-    "realized_pnl": 129969.01,
+    "cash": 232572.39,
+    "equity": 232572.39,
+    "in_position": false,
+    "position": null,
+    "realized_pnl": 132572.39,
     "symbol": "PSO",
-    "total_return_pct": 126.39,
+    "total_return_pct": 132.57,
     "trades": [
       {
         "action": "BUY",
@@ -7116,9 +7124,20 @@
         "date": "2026-10-30",
         "price": 355.44,
         "units": 646
+      },
+      {
+        "action": "SELL",
+        "buy_date": "2026-10-30",
+        "buy_price": 355.44,
+        "date": "2026-11-04",
+        "pnl": 2603.38,
+        "pnl_pct": 1.13,
+        "price": 359.47,
+        "proceeds": 232217.62,
+        "units": 646
       }
     ],
-    "trades_count": 27
+    "trades_count": 28
   },
   "SAZEW": {
     "capital_start": 100000.0,
@@ -8394,22 +8413,22 @@
   "TREET": {
     "capital_start": 100000.0,
     "cash": 11.21,
-    "equity": 81209.47,
+    "equity": 83525.41,
     "in_position": true,
     "position": {
       "buy_date": "2026-10-13",
       "buy_price": 23.87,
       "cost": 83759.83,
-      "last_price": 23.14,
-      "market_value": 81198.26,
+      "last_price": 23.8,
+      "market_value": 83514.2,
       "symbol": "TREET",
       "units": 3509,
-      "unrealized_pct": -3.06,
-      "unrealized_pnl": -2561.57
+      "unrealized_pct": -0.29,
+      "unrealized_pnl": -245.63
     },
     "realized_pnl": -16228.96,
     "symbol": "TREET",
-    "total_return_pct": -18.79,
+    "total_return_pct": -16.47,
     "trades": [
       {
         "action": "BUY",
